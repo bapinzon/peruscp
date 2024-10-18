@@ -2,11 +2,11 @@ from setuptools import setup, find_packages
 import pathlib
 
 HERE = pathlib.Path(__file__).parent
-README = (HERE / "README.md").read_text()
+README = (HERE / "README.md").read_text(encoding="utf-8")
 
 setup(
     name='peruscp',
-    version='0.0.2.1',
+    version='0.0.2.2',
     license='MIT',
     description='Es un paquete que realiza una solicitud a eldni.com extrayendo todos los datos a consultar, util para bots, APIS, Paginas WEB, son datos basicos de Reniec.',
     long_description=README,
